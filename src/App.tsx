@@ -3,7 +3,7 @@ function App() {
 
   return (
     <>
-      <h1>Rock, Paper, Scissors</h1>
+      <h1 className="uppercase">Rock, Paper, Scissors</h1>
     </>
   )
 }
