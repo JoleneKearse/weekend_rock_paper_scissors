@@ -1,4 +1,4 @@
-import { Button } from "./components/Button"
+import { Action } from "./components/Action"
 import { Header } from "./components/Header"
 
 function App() {
@@ -6,8 +6,9 @@ function App() {
   return (
     <>
       <Header />
-      <Button text="Rules" onClick={console.log("clicked")} className="hover:bg-neutral-100 hover:text-neutral-800" />
-      <Button text="Play Again" onClick={console.log("clicked")} className="bg-neutral-100 text-neutral-800 hover:text-red-100" />
+      <Action img={"/paper.svg"} className="bg-blue-100 shadow-[0_6px_0_#2A45C2]" />
+      <Action img={"/rock.svg"} className="bg-red-100 shadow-[0_6px_0_#9D1634]" />
+      <Action img={"/scissors.svg"} className="bg-yellow-100 shadow-[0_6px_0_#C76C1B]" />
     </>
   )
 }
