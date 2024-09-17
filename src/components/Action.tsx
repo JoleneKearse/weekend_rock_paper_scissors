@@ -1,19 +1,16 @@
-import { getImgAlt } from "../utils/gameActions";
+import { Choices } from "../models/Choices";
 
 type ActionProps = {
-  img: string;
-  className?: string;
+  choice: Choices;
 };
 
-export const Action = ({ img, className }: ActionProps) => {
+export const Action = ({ choice }: ActionProps) => {
   return (
     <button
-      className={`w-[130px] aspect-square rounded-full grid place-items-center  ${
-        className ? className : ""
-      }`}
+      className={`w-[130px] aspect-square rounded-full grid place-items-center  ${choice.className}`}
     >
       <div className="bg-neutral-200 w-[105px] aspect-square rounded-full grid place-items-center shadow-[0_-3px_2px_3px_#DADADA] mt-2">
-        <img src={img} alt={getImgAlt(img)} />
+        <img src={choice.img} alt={choice.name} />
       </div>
     </button>
   );

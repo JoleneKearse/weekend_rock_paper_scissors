@@ -31,7 +31,11 @@ export default {
       },
 
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "triangle": "url('/triangle.svg')",
+      }
+    },
   },
   plugins: [],
 };
